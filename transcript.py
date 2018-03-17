@@ -44,7 +44,7 @@ class Transcript():
         for l in self.raw_messages:                       ## raw_messages is list of lines
             l = l.rstrip()
 
-            msg_date, sep, msg = l.partition("- ")
+            msg_date, sep, msg = l.partition("] ")
             #msg_date, sep, msg = l.partition(": ")            #previously used 
             # Date and time has a , separator
             raw_date, sep, time = msg_date.partition(", ")
